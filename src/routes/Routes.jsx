@@ -3,6 +3,7 @@ import MainLayout from "../MainLayout";
 
 import Home from "../pages/Home";
 import GadgetsHome from "../pages/GadgetsHome";
+import ProductPage from "../pages/ProductPage";
 
 const routes = createBrowserRouter([
   {
@@ -31,6 +32,11 @@ const routes = createBrowserRouter([
       {
         path: "/dashboard",
         element: <p>Will Load Dashboard Later</p>,
+      },
+      {
+        path: "/:slug/:item",
+        element: <ProductPage />,
+        loader: () => fetch("../public/gadgets.json"),
       },
     ],
   },
