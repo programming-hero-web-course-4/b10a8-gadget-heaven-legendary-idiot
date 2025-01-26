@@ -1,30 +1,32 @@
 const Footer = () => {
   return (
-    <div className="w-11/12">
-      <div className="w-full sm:w-1/2">
-        <h2>Gadget Heaven</h2>
-        <p>Leading the way in cutting-edge technology and innovation.</p>
+    <div className="w-11/12 mx-auto mt-4">
+      <div className="w-full sm:w-1/2 py-8 text-center mx-auto space-y-4">
+        <h2 className="text-2xl sm:text-3xl font-bold">Gadget Heaven</h2>
+        <p className="text-base text-[#09080F99] font-medium">
+          Leading the way in cutting-edge technology and innovation.
+        </p>
       </div>
-      <div className="flex justify-around gap-4 flex-wrap">
-        <div>
-          <h2>Services</h2>
-          <p>Product Support</p>
-          <p>Order Tracking</p>
-          <p>Shipping & Delivery</p>
-          <p>Returns</p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 border-t border-[#09080F1A] py-8">
+        <div className="text-center space-y-2">
+          <h2 className="text-lg font-bold text-[#09080F]">Services</h2>
+          <p className="text-[#09080F99] font-normal">Product Support</p>
+          <p className="text-[#09080F99] font-normal">Order Tracking</p>
+          <p className="text-[#09080F99] font-normal">Shipping & Delivery</p>
+          <p className="text-[#09080F99] font-normal">Returns</p>
         </div>
-        <div>
-          <h2>Company</h2>
-          <p>About Us</p>
-          <p>Careers</p>
-          <p>Contact</p>
+        <div className="text-center space-y-2">
+          <h2 className="text-lg font-bold text-[#09080F]">Company</h2>
+          <p className="text-[#09080F99] font-normal">About Us</p>
+          <p className="text-[#09080F99] font-normal">Careers</p>
+          <p className="text-[#09080F99] font-normal">Contact</p>
         </div>
-        <div>
-          <h2>Legal</h2>
-          <p>Terms of Service</p>
-          <p>Privacy Policy</p>
-          <p>Shipping & Delivery</p>
-          <p>Cookie Policy</p>
+        <div className="text-center space-y-2">
+          <h2 className="text-lg font-bold text-[#09080F]">Legal</h2>
+          <p className="text-[#09080F99] font-normal">Terms of Service</p>
+          <p className="text-[#09080F99] font-normal">Privacy Policy</p>
+          <p className="text-[#09080F99] font-normal">Shipping & Delivery</p>
+          <p className="text-[#09080F99] font-normal">Cookie Policy</p>
         </div>
       </div>
     </div>

@@ -2,8 +2,8 @@ import bannerIMG from "../assets/banner.jpg";
 
 const HomeBanner = () => {
   return (
-    <div className="text-center rounded-b-2xl border-4 border-red-700">
-      <div className="space-y-7 bg-[#9538E2] min-h-[500px]">
+    <div className="text-center rounded-b-2xl">
+      <div className="space-y-7 bg-[#9538E2] min-h-[500px] pt-4 sm:pt-12 rounded-b-2xl">
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white w-[80%] mx-auto">
           Upgrade Your Tech Accessorize with Gadget Heaven Accessories
         </h2>
@@ -15,8 +15,8 @@ const HomeBanner = () => {
           Shop Now
         </button>
       </div>
-      <div className="relative border-4 min-h-[200px]">
-        <figure className="absolute border border-white rounded-2xl p-4 left-1/2 -translate-x-1/2 -top-1/2 h-[300px] sm:h-[450px] w-[85%]">
+      <div className="relative min-h-[200px]">
+        <figure className="absolute border border-white rounded-2xl p-4 left-1/2 -translate-x-1/2 -top-28 xl:-top-44 h-[300px] xl:h-[390px] w-[90%] sm:w-[75%]">
           <img
             className="object-cover rounded-2xl mx-auto w-full h-full"
             src={bannerIMG}
