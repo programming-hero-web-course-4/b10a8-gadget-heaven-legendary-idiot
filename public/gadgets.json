@@ -1,0 +1,187 @@
+[
+  {
+    "product_id": "201",
+    "product_title": "HP Pavilion x360",
+    "product_img": "https://i.ibb.co.com/7yJYmYc/image.png",
+    "category": "Laptops",
+    "price": 649.99,
+    "description": "The HP Pavilion x360 is a versatile 2-in-1 convertible laptop featuring a 360-degree hinge and a responsive touchscreen. With a lightweight design and compact form factor, it’s perfect for users who need a laptop that can adapt to various tasks, whether you're working, watching movies, or browsing the web. Powered by an Intel Core i3 processor and equipped with 8GB of RAM, the Pavilion x360 provides smooth multitasking performance. It also offers a 256GB SSD for fast data storage and retrieval, making it an excellent choice for everyday computing needs.",
+    "specifications": [
+      "Processor: Intel Core i3",
+      "RAM: 8GB",
+      "Storage: 256GB SSD",
+      "Screen Size: 14 inches"
+    ],
+    "availability": true,
+    "rating": 4.0
+  },
+  {
+    "product_id": "202",
+    "product_title": "MacBook Air M2",
+    "product_img": "https://i.ibb.co.com/JpqKtHG/image.png",
+    "category": "MacBook",
+    "price": 1199.99,
+    "description": "The MacBook Air M2 combines ultra-light portability with powerhouse performance, thanks to Apple's M2 chip. This MacBook offers exceptional energy efficiency, ensuring that users can work all day without worrying about battery life. Its Retina display delivers stunning visuals, and the fanless design ensures silent operation. Perfect for everyday tasks like browsing, office work, or creative projects, the MacBook Air M2 comes with 8GB of RAM and a 256GB SSD for optimal storage and speed. The laptop is sleek, durable, and ideal for users on the go.",
+    "specifications": [
+      "Processor: Apple M2",
+      "RAM: 8GB",
+      "Storage: 256GB SSD",
+      "Screen Size: 13.3 inches"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "203",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_img": "https://i.ibb.co.com/QM0RD7m/image.png",
+    "category": "Laptops",
+    "price": 1399.99,
+    "description": "The Lenovo ThinkPad X1 Carbon is the epitome of business-grade laptops, combining top-tier performance with durability. Powered by an Intel Core i7 processor and equipped with 16GB of RAM, this machine can handle complex tasks and multitasking with ease. The 512GB SSD ensures quick boot-up times and fast file transfers, while the 14-inch screen is perfect for work and travel. With a slim, lightweight design and long-lasting battery life, the ThinkPad X1 Carbon is ideal for professionals who need reliability and power in their daily computing experience.",
+    "specifications": [
+      "Processor: Intel Core i7",
+      "RAM: 16GB",
+      "Storage: 512GB SSD",
+      "Screen Size: 14 inches"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "301",
+    "product_title": "Samsung Galaxy S22",
+    "product_img": "https://i.ibb.co.com/pvQQ1Bj/image.png",
+    "category": "Phones",
+    "price": 799.99,
+    "description": "The Samsung Galaxy S22 is a flagship phone that offers stunning visuals with its 120Hz AMOLED display and powerful performance with the Exynos 2200 processor. This phone is designed for users who appreciate speed, stunning graphics, and seamless multitasking. With 8GB of RAM and 128GB of storage, it has plenty of space for apps, photos, and videos. The 6.1-inch screen is perfect for media consumption, and the device supports 5G for ultra-fast network speeds. It's a powerful and versatile smartphone ideal for both everyday and intensive usage.",
+    "specifications": [
+      "Processor: Exynos 2200",
+      "RAM: 8GB",
+      "Storage: 128GB",
+      "Screen Size: 6.1 inches"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "302",
+    "product_title": "Google Pixel 6",
+    "product_img": "https://i.ibb.co.com/yFv03XJ/image.png",
+    "category": "Phones",
+    "price": 599.99,
+    "description": "The Google Pixel 6 brings innovative features with Google’s Tensor chip, designed to enhance performance and battery efficiency. It offers a 6.4-inch display that is perfect for streaming videos, browsing, and gaming. The Pixel 6 boasts excellent camera performance, powered by advanced software to capture stunning photos in any lighting condition. The 128GB storage option provides ample space for all your media, apps, and files. The device runs on the latest version of Android, providing a seamless and responsive experience with Google’s AI at its core.",
+    "specifications": [
+      "Processor: Google Tensor",
+      "RAM: 8GB",
+      "Storage: 128GB",
+      "Screen Size: 6.4 inches"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "401",
+    "product_title": "Anker PowerBank 10000mAh",
+    "product_img": "https://i.ibb.co.com/5Rk4tKg/image.png",
+    "category": "Accessories",
+    "price": 29.99,
+    "description": "The Anker PowerBank 10000mAh is a compact and reliable power bank that ensures your devices stay charged while on the go. With two USB ports, it can charge multiple devices at once, making it perfect for travelers and busy individuals. Its 10000mAh capacity can fully charge most smartphones multiple times, and it features fast charging technology to ensure your devices are powered up quickly. The sleek design and lightweight build make it easy to carry, ensuring you're always prepared for any situation.",
+    "specifications": ["Capacity: 10000mAh", "USB Ports: 2", "Color: Black"],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "402",
+    "product_title": "Apple AirPods Pro",
+    "product_img": "https://i.ibb.co.com/JxHktNb/image.png",
+    "category": "Accessories",
+    "price": 249.99,
+    "description": "Apple AirPods Pro offer premium sound quality with active noise cancellation. These wireless earbuds are designed to provide a comfortable fit and exceptional audio performance for music lovers and busy professionals. With the latest Bluetooth 5.0 technology, they provide seamless connectivity with iPhones, iPads, and other compatible devices. The AirPods Pro also feature an adaptive equalizer, allowing the sound to adjust to your preferences for optimal listening. With up to 4.5 hours of battery life, they’re perfect for long listening sessions during travel or work.",
+    "specifications": [
+      "Battery Life: 4.5 hours",
+      "Bluetooth: 5.0",
+      "Color: White"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "403",
+    "product_title": "Logitech Wireless Mouse",
+    "product_img": "https://i.ibb.co.com/zXGPxDW/image.png",
+    "category": "Accessories",
+    "price": 19.99,
+    "description": "The Logitech Wireless Mouse is a simple and ergonomic solution for everyday computing needs. With wireless 2.4GHz connectivity, it offers a reliable and lag-free experience. This mouse is designed for comfort, with a shape that fits well in both left and right hands. It is powered by a single AA battery, and the battery life can last for several months, depending on usage. The Logitech Wireless Mouse is perfect for both work and play, offering a smooth and responsive experience for any task.",
+    "specifications": [
+      "Connectivity: Wireless",
+      "Battery: AA x 1",
+      "Color: Gray"
+    ],
+    "availability": true,
+    "rating": 4.2
+  },
+  {
+    "product_id": "501",
+    "product_title": "MacBook Pro M1",
+    "product_img": "https://i.ibb.co.com/0hZ0qzZ/image.png",
+    "category": "MacBook",
+    "price": 1799.99,
+    "description": "The MacBook Pro M1 is an ultra-powerful laptop designed for creative professionals. Powered by Apple's M1 Pro chip, it delivers unparalleled performance in editing videos, 3D modeling, or compiling code. The 14-inch Retina display offers exceptional color accuracy, making it ideal for graphic designers and photographers. With 16GB of RAM and a 512GB SSD, you can expect fast multitasking and plenty of storage for all your projects. The battery life ensures long hours of use, and the sleek design makes it a beautiful and functional tool for work and play.",
+    "specifications": [
+      "Processor: Apple M1 Pro",
+      "RAM: 16GB",
+      "Storage: 512GB SSD",
+      "Screen Size: 14 inches"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "502",
+    "product_title": "MacBook Air M1",
+    "product_img": "https://i.ibb.co.com/njgWjJj/image.png",
+    "category": "MacBook",
+    "price": 999.99,
+    "description": "The MacBook Air M1 is a lightweight yet powerful laptop that features Apple's M1 chip. This chip delivers fast processing speeds and impressive energy efficiency, resulting in long battery life. The 13.3-inch Retina display offers stunning visuals, and the slim design makes it easy to carry anywhere. With 8GB of RAM and a 256GB SSD, it provides enough power for everyday tasks like browsing, word processing, and media streaming. The MacBook Air M1 is ideal for students, professionals, and anyone who needs a reliable, portable laptop.",
+    "specifications": [
+      "Processor: Apple M1",
+      "RAM: 8GB",
+      "Storage: 256GB SSD",
+      "Screen Size: 13.3 inches"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "601",
+    "product_title": "iPhone 14 Pro",
+    "product_img": "https://i.ibb.co.com/PYbKy6v/image.png",
+    "category": "Iphone",
+    "price": 1099.99,
+    "description": "The iPhone 14 Pro delivers a stunning display with its ProMotion technology and boasts a powerful A16 Bionic chip for superior performance. The 48MP camera system takes professional-quality photos and videos, while the 6.1-inch screen ensures a vibrant and immersive visual experience. With 128GB of storage, you have ample space for all your apps, photos, and media. The iPhone 14 Pro also includes 5G support, providing ultra-fast network speeds. It’s the perfect choice for those seeking high-end performance, quality, and cutting-edge features in a smartphone.",
+    "specifications": [
+      "Processor: A16 Bionic",
+      "RAM: 6GB",
+      "Storage: 128GB",
+      "Screen Size: 6.1 inches"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "602",
+    "product_title": "iPhone SE 2022",
+    "product_img": "https://i.ibb.co.com/dphwmb2/image.png",
+    "category": "Iphone",
+    "price": 399.99,
+    "description": "The iPhone SE 2022 offers the powerful A15 Bionic chip at an affordable price. It features a compact design with a 4.7-inch display, making it perfect for those who prefer smaller phones. Despite its size, it offers exceptional performance, thanks to its efficient processor and optimized software. With 64GB of storage, it provides enough room for apps and photos. The iPhone SE 2022 is also compatible with 5G, ensuring fast download speeds. This device offers great value for users who want the latest technology without paying for a flagship model.",
+    "specifications": [
+      "Processor: A15 Bionic",
+      "RAM: 4GB",
+      "Storage: 64GB",
+      "Screen Size: 4.7 inches"
+    ],
+    "availability": true,
+    "rating": 4.4
+  }
+]

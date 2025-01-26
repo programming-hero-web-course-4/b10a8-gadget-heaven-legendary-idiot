@@ -1,16 +1,12 @@
-import Footer from "../components/Footer";
+import { Outlet } from "react-router-dom";
+
 import HomeBanner from "../components/HomeBanner";
-import Navbar from "../components/Navbar";
 
 const Home = () => {
   return (
     <>
-      {/* NavBar */}
-      <Navbar />
-      {/* Banner */}
       <HomeBanner />
-      {/* Footer */}
-      <Footer />
+      <Outlet />
     </>
   );
 };
