@@ -2,7 +2,7 @@ import { Rating } from "@mui/material";
 import { IoCartOutline, IoHeartOutline } from "react-icons/io5";
 import { AddToCartContext, WishListContext } from "../MainLayout";
 import { useContext } from "react";
-
+import toast from "react-hot-toast";
 const ProductContainer = ({ product }) => {
   const {
     product_id,
@@ -41,7 +41,9 @@ const ProductContainer = ({ product }) => {
             In Stock
           </div>
         ) : (
-          <div className="badge badge-outline">Out of Stock</div>
+          <div className="inline-block py-2 px-4 rounded-full bg-[#ff001910] border border-[#ff0000bd] text-[#ff0000]">
+            Out of Stock
+          </div>
         )}
         <p className="text-base text-[#09080F99]">{description}</p>
         <p className="text-base text-[#09080FCC] font-bold">Specification:</p>
@@ -69,6 +71,7 @@ const ProductContainer = ({ product }) => {
           <button
             onClick={() => {
               setAddToCart([...addToCart, product]);
+              toast.success("Item Added to Cart!!");
             }}
             className="bg-[#9538E2] hover:bg-[#9538e2d7] border-1 text-white rounded-full px-4 py-2 cursor-pointer flex items-center gap-2 text-lg font-semibold"
           >
@@ -78,6 +81,7 @@ const ProductContainer = ({ product }) => {
           <button
             onClick={() => {
               setAddToWishList([...addToWishList, product]);
+              toast.success("Item Added to Wishlist!!");
             }}
             className="rounded-full p-2 hover:bg-stone-300 cursor-pointer border border-[#0b0b0b26] font-bold"
           >

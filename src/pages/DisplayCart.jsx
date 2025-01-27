@@ -5,10 +5,20 @@ import CartBoxCard from "../components/CartBoxCard";
 const DisplayCart = () => {
   const { addToCart, setAddToCart } = useContext(AddToCartContext);
   const [totalPrice, setTotalPrice] = useState(0);
+
+  const handleRemoveItem = (itemToRemove) => {
+    const newList = addToCart.filter(
+      (product) => product.product_id !== itemToRemove.product_id
+    );
+    setAddToCart(newList);
+  };
+  // Update Total Price
   useEffect(() => {
+    let oldTotal = 0;
     addToCart?.forEach((product) => {
-      setTotalPrice((prev) => prev + product.price);
+      oldTotal += product.price;
     });
+    setTotalPrice(oldTotal);
   }, [addToCart]);
   return (
     <div className="my-8 space-y-5">
@@ -27,7 +37,11 @@ const DisplayCart = () => {
         </div>
       </div>
       {addToCart?.map((product, index) => (
-        <CartBoxCard key={index} item={product} />
+        <CartBoxCard
+          key={index}
+          item={product}
+          handleRemoveItem={handleRemoveItem}
+        />
       ))}
     </div>
   );

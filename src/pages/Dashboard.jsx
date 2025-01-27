@@ -3,7 +3,7 @@ import PageSection from "../components/PageSection";
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className="mb-8">
       <PageSection
         title="Dashboard"
         description="Explore the latest gadgets that will take your experience to the next level. From smart devices to the coolest accessories, we have it all!"

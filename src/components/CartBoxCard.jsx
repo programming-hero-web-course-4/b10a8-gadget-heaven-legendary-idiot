@@ -1,8 +1,11 @@
+import { useContext } from "react";
 import { RxCrossCircled } from "react-icons/rx";
-import { useLocation } from "react-router-dom";
+import { AddToCartContext } from "../MainLayout";
+import toast from "react-hot-toast";
 
-const CartBoxCard = ({ item, btn }) => {
+const CartBoxCard = ({ item, btnText, handleRemoveItem }) => {
   const { product_title, description, price, product_img } = item;
+  const { addToCart, setAddToCart } = useContext(AddToCartContext);
 
   return (
     <div className="bg-white p-4 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-5 sm:gap-4 rounded-2xl">
@@ -24,14 +27,27 @@ const CartBoxCard = ({ item, btn }) => {
           <p className="text-lg font-medium text-[#09080FCC]">
             Price: ${price}
           </p>
-          {btn && (
-            <button className="bg-[#9538E2] text-white text-base py-2 px-6 rounded-full">
-              {btn}
+          {btnText && (
+            <button
+              onClick={() => {
+                handleRemoveItem(item);
+                setAddToCart([...addToCart, item]);
+                toast.success("Item Added to Cart!!");
+              }}
+              className="bg-[#9538E2] text-white text-base py-2 px-6 rounded-full"
+            >
+              {btnText}
             </button>
           )}
         </div>
 
-        <button className="inline-flex">
+        <button
+          onClick={() => {
+            handleRemoveItem(item);
+            toast.error("Item Has Been Removed!!");
+          }}
+          className="inline-flex"
+        >
           <RxCrossCircled className="text-[#FF0000] size-8" />
         </button>
       </div>
