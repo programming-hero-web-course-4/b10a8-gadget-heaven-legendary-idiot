@@ -1,5 +1,7 @@
 import { Rating } from "@mui/material";
 import { IoCartOutline, IoHeartOutline } from "react-icons/io5";
+import { AddToCartContext, WishListContext } from "../MainLayout";
+import { useContext } from "react";
 
 const ProductContainer = ({ product }) => {
   const {
@@ -14,6 +16,9 @@ const ProductContainer = ({ product }) => {
     availability,
     rating,
   } = product;
+
+  const { addToWishList, setAddToWishList } = useContext(WishListContext);
+  const { addToCart, setAddToCart } = useContext(AddToCartContext);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 absolute top-52 md:top-44 bg-white w-11/12 sm:w-[85%] left-1/2 -translate-x-1/2 rounded-2xl">
@@ -61,11 +66,21 @@ const ProductContainer = ({ product }) => {
           </span>
         </div>
         <div className="flex items-center gap-4">
-          <button className="bg-[#9538E2] hover:bg-[#9538e2d7] border-1 text-white rounded-full px-4 py-2 cursor-pointer flex items-center gap-2 text-lg font-semibold">
+          <button
+            onClick={() => {
+              setAddToCart([...addToCart, product]);
+            }}
+            className="bg-[#9538E2] hover:bg-[#9538e2d7] border-1 text-white rounded-full px-4 py-2 cursor-pointer flex items-center gap-2 text-lg font-semibold"
+          >
             <span>Add To Cart</span>
             <IoCartOutline className="size-6" />
           </button>
-          <button className="rounded-full p-2 hover:bg-stone-300 cursor-pointer border border-[#0b0b0b26] font-bold">
+          <button
+            onClick={() => {
+              setAddToWishList([...addToWishList, product]);
+            }}
+            className="rounded-full p-2 hover:bg-stone-300 cursor-pointer border border-[#0b0b0b26] font-bold"
+          >
             <IoHeartOutline className="size-6" />
           </button>
         </div>

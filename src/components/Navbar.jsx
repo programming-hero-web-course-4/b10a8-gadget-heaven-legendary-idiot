@@ -8,10 +8,24 @@ const Navbar = () => {
         <NavLink to="/">Home</NavLink>
       </li>
       <li>
-        <NavLink>Statistics</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#9538E2] font-bold" : ""
+          }
+          to={"/statistics"}
+        >
+          Statistics
+        </NavLink>
       </li>
       <li>
-        <NavLink>Dashboard</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-[#9538E2] font-bold" : ""
+          }
+          to={"/dashboard"}
+        >
+          Dashboard
+        </NavLink>
       </li>
     </>
   );

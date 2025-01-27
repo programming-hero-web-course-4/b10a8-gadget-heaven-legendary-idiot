@@ -4,6 +4,9 @@ import MainLayout from "../MainLayout";
 import Home from "../pages/Home";
 import GadgetsHome from "../pages/GadgetsHome";
 import ProductPage from "../pages/ProductPage";
+import Dashboard from "../pages/Dashboard";
+import DisplayCart from "../pages/DisplayCart";
+import WishList from "../pages/WishList";
 
 const routes = createBrowserRouter([
   {
@@ -36,7 +39,17 @@ const routes = createBrowserRouter([
       },
       {
         path: "/dashboard",
-        element: <p>Will Load Dashboard Later</p>,
+        element: <Dashboard />,
+        children: [
+          {
+            path: "/dashboard/cart",
+            element: <DisplayCart />,
+          },
+          {
+            path: "/dashboard/wishlist",
+            element: <WishList />,
+          },
+        ],
       },
       {
         path: "/:slug/:item",
