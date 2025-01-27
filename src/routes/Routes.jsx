@@ -19,6 +19,11 @@ const routes = createBrowserRouter([
             element: <GadgetsHome />,
             loader: () => fetch("../public/gadgets.json"),
           },
+          {
+            path: "/:category",
+            element: <GadgetsHome />,
+            loader: () => fetch("../public/gadgets.json"),
+          },
         ],
       },
       {
