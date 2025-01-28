@@ -73,10 +73,10 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end gap-3">
-        <button className="bg-stone-100 border-1 rounded-full p-2 hover:bg-amber-200 cursor-pointer">
+        <button className="bg-stone-100 border border-stone-400 rounded-full p-2 hover:bg-stone-200 cursor-pointer">
           <IoCartOutline className="size-5" />
         </button>
-        <button className="bg-stone-100 border-1 rounded-full p-2 hover:bg-amber-200 cursor-pointer">
+        <button className="bg-stone-100 border border-stone-400 rounded-full p-2 hover:bg-stone-200 cursor-pointer">
           <IoHeartOutline className="size-5" />
         </button>
       </div>

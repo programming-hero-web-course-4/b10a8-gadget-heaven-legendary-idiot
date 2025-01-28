@@ -47,7 +47,7 @@ const DisplayCart = () => {
             onClick={() => {
               if (addToCart.length !== 0) {
                 document.getElementById("paymentModal").showModal();
-                setAddToCart([]);
+                // setAddToCart([]);
               } else {
                 toast.error("Sorry!! Your Cart is Empty");
               }
@@ -82,7 +82,14 @@ const DisplayCart = () => {
             <p className="text-[#09080F99]">Thanks for Purchasing</p>
             <p className="text-[#09080F99]">Total: ${totalPrice}</p>
             <form method="dialog">
-              <button className="btn block w-full rounded-full">Close</button>
+              <button
+                onClick={() => {
+                  setAddToCart([]);
+                }}
+                className="btn block w-full rounded-full"
+              >
+                Close
+              </button>
             </form>
           </div>
         </div>
