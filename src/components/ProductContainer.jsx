@@ -1,7 +1,7 @@
 import { Rating } from "@mui/material";
 import { IoCartOutline, IoHeartOutline } from "react-icons/io5";
 import { AddToCartContext, WishListContext } from "../MainLayout";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 const ProductContainer = ({ product }) => {
   const {
@@ -19,6 +19,18 @@ const ProductContainer = ({ product }) => {
 
   const { addToWishList, setAddToWishList } = useContext(WishListContext);
   const { addToCart, setAddToCart } = useContext(AddToCartContext);
+  const [alreadyAtWishList, setAlreadyAtWishList] = useState(false);
+
+  useEffect(() => {
+    const isAlreadyAdded = addToWishList.find(
+      (prod) => prod.product_id === product_id
+    );
+    if (isAlreadyAdded === undefined) {
+      setAlreadyAtWishList(false);
+    } else {
+      setAlreadyAtWishList(true);
+    }
+  }, [product_id, addToWishList]);
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 p-6 absolute top-52 md:top-44 bg-white w-11/12 sm:w-[85%] left-1/2 -translate-x-1/2 rounded-2xl">
@@ -70,8 +82,12 @@ const ProductContainer = ({ product }) => {
         <div className="flex items-center gap-4">
           <button
             onClick={() => {
-              setAddToCart([...addToCart, product]);
-              toast.success("Item Added to Cart!!");
+              if (availability) {
+                setAddToCart([...addToCart, product]);
+                toast.success("Item Added to Cart!!");
+              } else {
+                toast.error("Sorry! The item is out of stock");
+              }
             }}
             className="bg-[#9538E2] hover:bg-[#9538e2d7] border text-white rounded-full px-4 py-2 cursor-pointer flex items-center gap-2 text-lg font-semibold"
           >
@@ -79,11 +95,12 @@ const ProductContainer = ({ product }) => {
             <IoCartOutline className="size-6" />
           </button>
           <button
+            disabled={alreadyAtWishList ? true : false}
             onClick={() => {
               setAddToWishList([...addToWishList, product]);
               toast.success("Item Added to Wishlist!!");
             }}
-            className="rounded-full p-2 hover:bg-stone-300 cursor-pointer border border-[#0b0b0b26] font-bold"
+            className="btn rounded-full p-2 hover:bg-stone-300 cursor-pointer border border-[#0b0b0b26] font-bold"
           >
             <IoHeartOutline className="size-6" />
           </button>

@@ -3,11 +3,13 @@ import { AddToCartContext } from "../MainLayout";
 import CartBoxCard from "../components/CartBoxCard";
 import { HiMiniBarsArrowDown } from "react-icons/hi2";
 import paymentIcon from "../assets/Group.png";
-import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const DisplayCart = () => {
   const { addToCart, setAddToCart } = useContext(AddToCartContext);
   const [totalPrice, setTotalPrice] = useState(0);
+
+  const redirect = useNavigate();
 
   const handleRemoveItem = (itemToRemove) => {
     const newList = addToCart.filter(
@@ -37,22 +39,21 @@ const DisplayCart = () => {
             Total Cost: ${totalPrice.toFixed(2)}
           </h2>
           <button
+            disabled={addToCart.length !== 0 ? false : true}
             onClick={handleDescendingSort}
-            className="border border-[#8332C5] text-base text-[#9538E2] py-2 px-6 rounded-full inline-flex items-center gap-2 hover:bg-[#8332C5] hover:text-white cursor-pointer"
+            className="btn border border-[#8332C5] text-base text-[#9538E2] py-2 px-6 rounded-full inline-flex items-center gap-2 hover:bg-[#8332C5] hover:text-white cursor-pointer"
           >
             <span> Sort By Price</span>
             <HiMiniBarsArrowDown className="size-5" />
           </button>
           <button
+            disabled={addToCart.length !== 0 ? false : true}
             onClick={() => {
               if (addToCart.length !== 0) {
                 document.getElementById("paymentModal").showModal();
-                // setAddToCart([]);
-              } else {
-                toast.error("Sorry!! Your Cart is Empty");
               }
             }}
-            className="bg-[#9538E2] text-base text-white py-2 px-6 rounded-full hover:text-[#8332C5] hover:bg-white cursor-pointer border"
+            className="btn bg-[#9538E2] text-base text-white py-2 px-6 rounded-full hover:text-[#8332C5] hover:bg-white cursor-pointer border border-[#9538E2] disabled:text-[#8332C5]"
           >
             Purchase
           </button>
@@ -80,11 +81,12 @@ const DisplayCart = () => {
 
           <div className="py-6 text-center space-y-4">
             <p className="text-[#09080F99]">Thanks for Purchasing</p>
-            <p className="text-[#09080F99]">Total: ${totalPrice}</p>
+            <p className="text-[#09080F99]">Total: ${totalPrice.toFixed(2)}</p>
             <form method="dialog">
               <button
                 onClick={() => {
                   setAddToCart([]);
+                  redirect("/");
                 }}
                 className="btn block w-full rounded-full"
               >

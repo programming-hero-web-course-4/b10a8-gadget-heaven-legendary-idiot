@@ -5,12 +5,19 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <NavLink
+          className={({ isActive }) =>
+            isActive ? "text-white bg-stone-600 font-semibold" : ""
+          }
+          to="/"
+        >
+          Home
+        </NavLink>
       </li>
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-[#9538E2] font-bold" : ""
+            isActive ? "text-white bg-stone-600 font-semibold" : ""
           }
           to={"/statistics"}
         >
@@ -20,7 +27,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className={({ isActive }) =>
-            isActive ? "text-[#9538E2] font-bold" : ""
+            isActive ? "text-white bg-stone-600 font-semibold" : ""
           }
           to={"/dashboard"}
         >
