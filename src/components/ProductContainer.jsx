@@ -49,11 +49,11 @@ const ProductContainer = ({ product }) => {
           Price: ${price}
         </p>
         {availability ? (
-          <div className="inline-block py-2 px-4 rounded-full bg-[#309c081a] border border-[#309C08] text-[#309C08]">
+          <div className="inline-block px-3 rounded-full bg-[#309c081a] border border-[#309C08] text-[#309C08] font-light">
             In Stock
           </div>
         ) : (
-          <div className="inline-block py-2 px-4 rounded-full bg-[#ff001910] border border-[#ff0000bd] text-[#ff0000]">
+          <div className="inline-block px-3 rounded-full bg-[#ff001910] border border-[#ff0000bd] text-[#ff0000] font-light">
             Out of Stock
           </div>
         )}
