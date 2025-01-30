@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import img404 from "../assets/404.jpg";
+import useDocumentTitle from "./../utils/useDocumentTitle";
 
 const ErrorPage = () => {
+  useDocumentTitle("404 - Gadget Heaven");
   return (
     <div className="min-h-screen bg-white flex flex-col justify-center items-center gap-12   md:flex-row">
       <img

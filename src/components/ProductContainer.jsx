@@ -3,6 +3,7 @@ import { IoCartOutline, IoHeartOutline } from "react-icons/io5";
 import { AddToCartContext, WishListContext } from "../MainLayout";
 import { useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import useDocumentTitle from "../utils/useDocumentTitle";
 const ProductContainer = ({ product }) => {
   const {
     product_id,
@@ -20,6 +21,7 @@ const ProductContainer = ({ product }) => {
   const { addToWishList, setAddToWishList } = useContext(WishListContext);
   const { addToCart, setAddToCart } = useContext(AddToCartContext);
   const [alreadyAtWishList, setAlreadyAtWishList] = useState(false);
+  useDocumentTitle(`${product_title} - Gadget Heaven`);
 
   useEffect(() => {
     const isAlreadyAdded = addToWishList.find(

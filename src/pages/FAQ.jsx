@@ -1,4 +1,6 @@
+import useDocumentTitle from "./../utils/useDocumentTitle";
 const FAQ = () => {
+  useDocumentTitle("FAQ - Gadget Heaven");
   return (
     <div className="my-8 space-y-4">
       <h2 className="text-2xl sm:text-3xl font-bold text-center">

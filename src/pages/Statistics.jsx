@@ -1,7 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 
 import {
-  LineChart,
   Line,
   ResponsiveContainer,
   ComposedChart,
@@ -13,14 +12,12 @@ import {
   Bar,
   Tooltip,
 } from "recharts";
+import useDocumentTitle from "../utils/useDocumentTitle";
 
 const Statistics = () => {
+  useDocumentTitle("Statistics - Gadget Heaven");
   const data3 = useLoaderData();
-  const data = [
-    { name: "Page A", uv: 400, pv: 2400, amt: 2400 },
-    { name: "Page B", uv: 600, pv: 2000, amt: 2600 },
-  ];
-  // console.log(data3);
+
   const renderLineChart = (
     <ResponsiveContainer>
       <ComposedChart
@@ -65,7 +62,7 @@ const Statistics = () => {
 
   return (
     <div className="my-4 p-4 bg-white">
-      <h2 className="text-3xl font-semibold my-3">Statistics</h2>
+      <h2 className="text-2xl sm:text-3xl font-semibold my-3">Statistics</h2>
       <div className="w-full h-[350px] sm:h-[500px]">{renderLineChart}</div>
     </div>
   );
