@@ -1,6 +1,6 @@
 # Project - Gadget Heaven
 
-- Live Link: [Gadget Heaven](https://dream-11-rafee.netlify.app/)
+- Live Link: [Gadget Heaven](https://gadget-heaven-rafee.surge.sh)
 
 ## Brief Description
 
