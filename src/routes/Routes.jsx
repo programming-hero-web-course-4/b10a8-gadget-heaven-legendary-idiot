@@ -7,11 +7,15 @@ import ProductPage from "../pages/ProductPage";
 import Dashboard from "../pages/Dashboard";
 import DisplayCart from "../pages/DisplayCart";
 import WishList from "../pages/WishList";
+import ErrorPage from "../pages/ErrorPage";
+import FAQ from "../pages/FAQ";
+import Statistics from "./../pages/Statistics";
 
 const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -20,22 +24,23 @@ const routes = createBrowserRouter([
           {
             path: "/",
             element: <GadgetsHome />,
-            loader: () => fetch("../public/gadgets.json"),
+            loader: () => fetch("../gadgets.json"),
           },
           {
             path: "/:category",
             element: <GadgetsHome />,
-            loader: () => fetch("../public/gadgets.json"),
+            loader: () => fetch("../gadgets.json"),
           },
         ],
       },
       {
-        path: "/categories/:category",
-        element: <p>Will Load Item Later</p>,
+        path: "/faq",
+        element: <FAQ />,
       },
       {
         path: "/statistics",
-        element: <p>Will Load Statistics Later</p>,
+        element: <Statistics />,
+        loader: () => fetch("../gadgets.json"),
       },
       {
         path: "/dashboard",
@@ -54,7 +59,7 @@ const routes = createBrowserRouter([
       {
         path: "/:slug/:item",
         element: <ProductPage />,
-        loader: () => fetch("../public/gadgets.json"),
+        loader: () => fetch("../gadgets.json"),
       },
     ],
   },

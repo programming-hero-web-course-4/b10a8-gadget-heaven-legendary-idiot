@@ -5,7 +5,7 @@ const HomeBanner = () => {
     <div className="text-center rounded-b-2xl">
       <div className="space-y-7 bg-[#9538E2] min-h-[500px] pt-4 sm:pt-12 rounded-b-2xl">
         <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-white w-[80%] mx-auto">
-          Upgrade Your Tech Accessorize with Gadget Heaven Accessories
+          Upgrade Your Tech Accessories with Gadget Heaven Accessories
         </h2>
         <p className="text-base sm:text-lg font-normal text-white text-center w-[80%] mx-auto">
           Explore the latest gadgets that will take your experience to the next

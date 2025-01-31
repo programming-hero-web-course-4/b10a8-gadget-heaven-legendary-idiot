@@ -90,7 +90,7 @@
     "product_img": "https://i.ibb.co.com/5Rk4tKg/image.png",
     "category": "Accessories",
     "slug": "accessories",
-    "price": 29.99,
+    "price": 69.99,
     "description": "The Anker PowerBank 10000mAh is a compact and reliable power bank that ensures your devices stay charged while on the go. With two USB ports, it can charge multiple devices at once, making it perfect for travelers and busy individuals. Its 10000mAh capacity can fully charge most smartphones multiple times, and it features fast charging technology to ensure your devices are powered up quickly. The sleek design and lightweight build make it easy to carry, ensuring you're always prepared for any situation.",
     "specifications": ["Capacity: 10000mAh", "USB Ports: 2", "Color: Black"],
     "availability": true,
@@ -118,7 +118,7 @@
     "product_img": "https://i.ibb.co.com/zXGPxDW/image.png",
     "category": "Accessories",
     "slug": "accessories",
-    "price": 19.99,
+    "price": 59.99,
     "description": "The Logitech Wireless Mouse is a simple and ergonomic solution for everyday computing needs. With wireless 2.4GHz connectivity, it offers a reliable and lag-free experience. This mouse is designed for comfort, with a shape that fits well in both left and right hands. It is powered by a single AA battery, and the battery life can last for several months, depending on usage. The Logitech Wireless Mouse is perfect for both work and play, offering a smooth and responsive experience for any task.",
     "specifications": [
       "Connectivity: Wireless",

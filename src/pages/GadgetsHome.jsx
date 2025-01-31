@@ -28,7 +28,13 @@ const GadgetsHome = () => {
       </h2>
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
         <SideBarCategories />
-        <GadgetCards products={filteredProducts} />
+        {filteredProducts.length === 0 ? (
+          <h2 className="text-2xl font-bold lg:col-span-3">
+            Sorry! There are no available products!!
+          </h2>
+        ) : (
+          <GadgetCards products={filteredProducts} />
+        )}
       </div>
     </div>
   );

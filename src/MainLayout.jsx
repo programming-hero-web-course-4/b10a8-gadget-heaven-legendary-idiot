@@ -12,7 +12,7 @@ const MainLayout = () => {
   return (
     <div className="w-11/12 m-auto">
       <Toaster />
-      <Navbar />
+      <Navbar wishList={addToWishList} cartList={addToCart} />
       <WishListContext.Provider value={{ addToWishList, setAddToWishList }}>
         <AddToCartContext.Provider value={{ addToCart, setAddToCart }}>
           <Outlet />

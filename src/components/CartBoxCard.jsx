@@ -34,7 +34,7 @@ const CartBoxCard = ({ item, btnText, handleRemoveItem }) => {
                 setAddToCart([...addToCart, item]);
                 toast.success("Item Added to Cart!!");
               }}
-              className="bg-[#9538E2] text-white text-base py-2 px-6 rounded-full"
+              className="bg-[#9538E2] text-white text-base py-2 px-6 rounded-full hover:text-[#9538E2] hover:bg-white cursor-pointer border"
             >
               {btnText}
             </button>

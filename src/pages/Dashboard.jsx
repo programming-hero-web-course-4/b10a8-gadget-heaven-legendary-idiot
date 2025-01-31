@@ -1,7 +1,9 @@
 import { Outlet } from "react-router-dom";
 import PageSection from "../components/PageSection";
+import useDocumentTitle from "./../utils/useDocumentTitle";
 
 const Dashboard = () => {
+  useDocumentTitle("Dashboard - Gadget Heaven");
   return (
     <div className="mb-8">
       <PageSection
